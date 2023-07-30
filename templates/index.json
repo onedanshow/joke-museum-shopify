@@ -38,7 +38,7 @@
     "db81c8b5-c3bf-43ef-b27f-5659b99536e8": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"page-width scroll-trigger animate--slide-in\">\n{% paginate pages by 1000 -%}\n  {% for page in pages -%}\n    {% assign split_title = page.title | split: \"+\" %}\n{% assign joke_type = split_title.last | remove: ' Jokes' %}\n    {{ joke_type | link_to: page.url }}\n  {%- endfor %}\n\n  {{- paginate | default_pagination }}\n{%- endpaginate %}\n<\/div>",
+        "custom_liquid": "<div class=\"page-width scroll-trigger animate--slide-in\">\n{% paginate pages by 1000 -%}\n  {% for page in pages -%}\n    {% assign split_title = page.title | split: \"+\" %}\n{% assign joke_type = split_title.last | remove: ' Jokes' %}\n    <a href=\"{{ page.url }}\" class=\"link link--text\">{{ joke_type }}<\/a>\n  {%- endfor %}\n\n  {{- paginate | default_pagination }}\n{%- endpaginate %}\n<\/div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
