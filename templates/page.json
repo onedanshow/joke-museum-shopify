@@ -4,8 +4,9 @@
       "type": "main-page",
       "custom_css": [
         "h1 {text-align: center;}",
-        "ul {padding-left: 0;}",
-        "li {background-color: white; margin-bottom: 1.75em; list-style: none; padding: 1.75em; letter-spacing: 0.025em; line-height: 1.25em; border-radius: 0.25em;}"
+        "ul {padding-left: 0; text-align: center; color: black;}",
+        "li {background-color: white; margin-bottom: 1.75em; list-style: none; padding: 1.75em; letter-spacing: 0.025em; line-height: 1.25em; border-radius: 0.5em; transition: transform 0.15s ease-in-out;}",
+        "li:hover {transform: scale(1.03);}"
       ],
       "settings": {
         "padding_top": 36,

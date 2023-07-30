@@ -219,11 +219,11 @@
         },
         "inverse": {
           "settings": {
-            "background": "#252525",
+            "background": "#716A56",
             "background_gradient": "",
             "text": "#EFECEC",
             "button": "#EFECEC",
-            "button_label": "#252525",
+            "button_label": "#716A56",
             "secondary_button_label": "#EFECEC",
             "shadow": "#252525"
           }
@@ -345,7 +345,7 @@
       "badge_position": "bottom left",
       "badge_corner_radius": 6,
       "sale_badge_color_scheme": "accent-2",
-      "sold_out_badge_color_scheme": "inverse",
+      "sold_out_badge_color_scheme": "accent-1",
       "brand_headline": "",
       "brand_description": "",
       "brand_image_width": 100,
