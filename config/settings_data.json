@@ -1,6 +1,6 @@
 {
   "current": {
-    "logo_width": 100,
+    "logo_width": 150,
     "type_header_font": "josefin_sans_n4",
     "heading_scale": 100,
     "type_body_font": "archivo_n4",
@@ -111,7 +111,7 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": true,
-    "currency_code_enabled": true,
+    "currency_code_enabled": false,
     "cart_type": "notification",
     "show_vendor": false,
     "show_cart_note": false,
