@@ -6,22 +6,9 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "4e994b1f-4747-4ccf-a83c-5b75d41451bc": {
-      "type": "custom-liquid",
-      "custom_css": [
-        ".link {padding: 10px; padding-left: 15px; padding-right: 15px; background-color: white; border-radius: 100px; margin-bottom: 7px;}"
-      ],
-      "settings": {
-        "custom_liquid": "<div class=\"page-width scroll-trigger animate--slide-in center\">\n{% assign handles = page.metafields.moj.related_pages | split: ',' %}\n\n{% for handle in handles %}\n  {% assign related_page = pages[handle] %}\n\n  {% if related_page %}\n    {% assign split_title = related_page.title | split: \"+\" %}\n{% assign joke_type = split_title.last %}\n    <a href=\"{{ related_page.url }}\" class=\"link link--text\">{{ joke_type }}<\/a>\n  {% endif %}\n{% endfor %}\n<\/div>",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
-    "fdb21456-4f40-4808-9e25-77df0e95e655",
-    "4e994b1f-4747-4ccf-a83c-5b75d41451bc"
+    "fdb21456-4f40-4808-9e25-77df0e95e655"
   ]
 }
