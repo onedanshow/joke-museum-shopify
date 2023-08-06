@@ -42,7 +42,7 @@
         ".link {padding: 10px; padding-left: 15px; padding-right: 15px; background-color: white; border-radius: 100px; margin-bottom: 7px;}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"page-width scroll-trigger animate--slide-in center\">\n{% paginate pages by 1000 -%}\n  {% for page in pages -%}\n    {% assign split_title = page.title | split: \"+\" %}\n{% assign joke_type = split_title.last | remove: ' Jokes' %}\n    <a href=\"{{ page.url }}\" class=\"link link--text\">{{ joke_type }}<\/a>\n  {%- endfor %}\n\n  {{- paginate | default_pagination }}\n{%- endpaginate %}\n<\/div>",
+        "custom_liquid": "<div class=\"page-width scroll-trigger animate--slide-in center\">\n{% paginate pages by 500 -%}\n  {% for page in pages -%}\n    {% assign split_title = page.title | split: \"+\" %}\n{% assign joke_type = split_title.last %}\n    <a href=\"{{ page.url }}\" class=\"link link--text\">{{ joke_type }}<\/a>\n  {%- endfor %}\n  <p>\n  {{- paginate | default_pagination }}\n  <\/p>\n{%- endpaginate %}\n<\/div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
