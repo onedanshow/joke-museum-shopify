@@ -27,7 +27,15 @@
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {%- if page.metafields.moj.jokes != blank -%}
-      {{ page.metafields.moj.jokes }}
+      <ul>
+      {%- for joke in page.metafields.moj.jokes.value -%}
+        {%- assign split = joke | split: '||' -%}
+        <li>
+          <h2>{{ split | first }}</h2>
+          <p>{{ split | last }}</p>
+        </li>
+      {%- endfor -%}
+      </ul>
     {%- else -%}
       {{ page.content }}
     {%- endif -%}
