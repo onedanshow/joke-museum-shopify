@@ -1,24 +1,9 @@
 {
   "sections": {
-    "30991e70-924a-499f-9c45-d669c41d7f06": {
-      "type": "custom-liquid",
+    "fdb21456-4f40-4808-9e25-77df0e95e655": {
+      "type": "main-page-moj",
       "settings": {
-        "custom_liquid": "{% assign split_title = page.title | split: \"+\" %}\n{% assign title = split_title.last %}\n<h1 class=\"main-page-title page-title h0 scroll-trigger animate--fade-in center\">{{ title }}<\/h1>",
-        "color_scheme": "",
-        "padding_top": 52,
-        "padding_bottom": 0
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "custom_css": [
-        "h1 {display: none;}",
-        "ul {padding-left: 0; text-align: center; color: black;}",
-        "li {background-color: white; margin-bottom: 1.75em; list-style: none; padding: 1.75em; letter-spacing: 0.025em; line-height: 1.25em; border-radius: 0.5em; transition: transform 0.15s ease-in-out;}",
-        "li:hover {transform: scale(1.03);}"
-      ],
-      "settings": {
-        "padding_top": 0,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -36,8 +21,7 @@
     }
   },
   "order": [
-    "30991e70-924a-499f-9c45-d669c41d7f06",
-    "main",
+    "fdb21456-4f40-4808-9e25-77df0e95e655",
     "4e994b1f-4747-4ccf-a83c-5b75d41451bc"
   ]
 }

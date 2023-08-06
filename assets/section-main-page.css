@@ -21,3 +21,33 @@
   width: 52.5rem;
   height: 52.5rem;
 }
+
+/* DD: Jokes */
+#MainContent ul {
+  padding-left: 0;
+  text-align: center;
+  color: black;
+}
+#MainContent li {
+  background-color: white;
+  margin-bottom: 1.75em;
+  list-style: none;
+  padding: 1.75em;
+  letter-spacing: 0.025em;
+  line-height: 1.25em;
+  border-radius: 0.5em;
+  transition: transform 0.15s ease-in-out;
+}
+#MainContent li:hover {
+  transform: scale(1.03);
+}
+
+/* DD: Related links */
+#MainContent .link {
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: white;
+  border-radius: 100px;
+  margin-bottom: 7px;
+}
