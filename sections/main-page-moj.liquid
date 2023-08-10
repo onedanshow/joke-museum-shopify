@@ -17,6 +17,19 @@
 {%liquid 
   assign title = page.title | split: "+" | last 
 %}
+<div id="MoreJokes" class="scroll-trigger animate--slide-in center">
+  {% assign handles = page.metafields.moj.related_pages | split: ',' %}
+  
+  {% for handle in handles %}
+    {% assign related_page = pages[handle] %}
+  
+    {%- if related_page != blank -%}
+      {% assign split_title = related_page.title | split: "+" %}
+      {% assign joke_type = split_title.last %}
+      <a href="{{ related_page.url }}" class="link link--text">{{ joke_type }}</a>
+    {%- endif -%}
+  {% endfor %}
+</div>
 <div class="page-width page-width--narrow section-{{ section.id }}-padding">
   <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %} center">
     {%- if title != blank -%}
