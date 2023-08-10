@@ -29,8 +29,7 @@
     "header": {
       "type": "header",
       "custom_css": [
-        "@media screen and (max-width: 751px) {.header__heading-link {padding: 0; }}",
-        ".h2 {font-size: calc(var(--font-heading-scale) * 1.9rem); }"
+        "@media screen and (max-width: 750px) {.header__heading-link {padding: 0; } .h2 {font-size: calc(var(--font-heading-scale) * 1.925rem); }}"
       ],
       "settings": {
         "logo_position": "middle-center",
