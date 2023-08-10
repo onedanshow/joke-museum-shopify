@@ -58,6 +58,12 @@
   overflow-x: auto;
   display: flex;
   flex-direction: row;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+#MoreJokes::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and newer versions of Opera */
 }
 
 #MoreJokes a.link {
