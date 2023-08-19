@@ -72,21 +72,19 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@graph": [
-        {%- for joke in page.metafields.moj.jokes.value -%}
-          {%- assign split = joke | split: '||' -%}
-          {%- if split.first contains '?' -%}
-            {
-              "@type": "Question",
-              "name": "{{ split.first | escape }}",
-              "text": "{{ split.first | escape }}",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "{{ split.last | escape }}"
-              }
-            },
-          {%- endif -%}
-        {%- endfor -%}
+      "@type": "FAQPage",
+      "mainEntity": [
+      {%- for joke in page.metafields.moj.jokes.value -%}
+        {%- assign split = joke | split: '||' -%}
+        {
+          "@type": "Question",
+          "name": "{{ split.first | escape }}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{{ split.last | escape }}"
+          }
+        }{%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
       ]
     }
     </script>
