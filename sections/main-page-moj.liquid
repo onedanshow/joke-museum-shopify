@@ -68,6 +68,30 @@
   </div>
 </div>
 
+{%- if page.metafields.moj.jokes != blank -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {%- for joke in page.metafields.moj.jokes.value -%}
+          {%- assign split = joke | split: '||' -%}
+          {%- if split.first contains '?' -%}
+            {
+              "@type": "Question",
+              "name": "{{ split.first | escape }}",
+              "text": "{{ split.first | escape }}",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{{ split.last | escape }}"
+              }
+            },
+          {%- endif -%}
+        {%- endfor -%}
+      ]
+    }
+    </script>
+{%- endif -%}
+
 {% schema %}
 {
   "name": "Jokes Page",
