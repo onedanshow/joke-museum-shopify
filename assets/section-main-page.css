@@ -38,6 +38,9 @@
   border-radius: 0.5em;
   transition: transform 0.15s ease-in-out;
 }
+#MainContent li h2, #MainContent li p {
+  word-wrap: break-word;
+}
 #MainContent li:hover {
   transform: scale(1.03);
 }
