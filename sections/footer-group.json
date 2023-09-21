@@ -38,6 +38,18 @@
     },
     "footer": {
       "type": "footer",
+      "blocks": {
+        "dd2ac7fe-a0b2-438b-ba3a-18b7f5a1845f": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "dd2ac7fe-a0b2-438b-ba3a-18b7f5a1845f"
+      ],
       "settings": {
         "color_scheme": "accent-1",
         "newsletter_enable": false,
