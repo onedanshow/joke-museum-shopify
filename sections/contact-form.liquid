@@ -97,6 +97,7 @@
           {%- endif -%}
         </div>
       </div>
+      {% comment %}
       <div class="field">
         <input
           type="tel"
@@ -110,6 +111,7 @@
         >
         <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
       </div>
+      {% endcomment %}
       <div class="field">
         <textarea
           rows="10"
@@ -121,7 +123,10 @@
           {{- form.body -}}
         </textarea>
         <label class="form__label field__label" for="ContactForm-body">
+          {% comment %}        
           {{- 'templates.contact.form.comment' | t -}}
+          {% endcomment %}
+          Joke
         </label>
       </div>
       <div class="contact__button">
