@@ -41,9 +41,11 @@
 #MainContent li h2, #MainContent li p {
   word-wrap: break-word;
 }
+/*
 #MainContent li:hover {
   transform: scale(1.03);
 }
+*/
 
 /* DD: Related links */
 #MainContent .link {
