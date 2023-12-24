@@ -1,5 +1,46 @@
 {
   "sections": {
+    "f50ad283-0ff0-43a1-ac31-eb92e36f3c88": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15231098323022__f50ad283-0ff0-43a1-ac31-eb92e36f3c88-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Joke of the Day",
+            "heading_size": "h1"
+          }
+        },
+        "656bf7ff-bac5-421c-86a8-3a845e6708fe": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Why was Santa's little helper feeling depressed?<\/strong>",
+            "heading_size": "h2"
+          }
+        },
+        "9ac1e29c-84f1-4a6e-96a4-cbb2da7e18bc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Because he had low \"elf\" esteem!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15231098323022__f50ad283-0ff0-43a1-ac31-eb92e36f3c88-heading-1",
+        "656bf7ff-bac5-421c-86a8-3a845e6708fe",
+        "9ac1e29c-84f1-4a6e-96a4-cbb2da7e18bc"
+      ],
+      "custom_css": [
+        ".content-container {margin-top: 52px; margin-bottom: 52px;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "391353a9-c6bb-4026-88ab-4bee6b8e9095": {
       "type": "image-banner",
       "blocks": {
@@ -51,6 +92,7 @@
     }
   },
   "order": [
+    "f50ad283-0ff0-43a1-ac31-eb92e36f3c88",
     "391353a9-c6bb-4026-88ab-4bee6b8e9095",
     "db81c8b5-c3bf-43ef-b27f-5659b99536e8"
   ]
