@@ -22,6 +22,7 @@
         "template--14828623233102__391353a9-c6bb-4026-88ab-4bee6b8e9095-heading-1",
         "template--14828623233102__391353a9-c6bb-4026-88ab-4bee6b8e9095-text-1"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/hero_image2.png",
         "image_overlay_opacity": 0,

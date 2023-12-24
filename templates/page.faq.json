@@ -1,0 +1,48 @@
+{
+  "sections": {
+    "da3cb779-19b7-40e5-be3b-91dfc38f0583": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--15095008690254__da3cb779-19b7-40e5-be3b-91dfc38f0583-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the Museum of Jokes?",
+            "icon": "none",
+            "row_content": "<p>The Museum of Jokes is a unique cultural institution dedicated to the art of humor. Our exhibits feature a wide range of jokes, from classic one-liners to contemporary humor, presented in an artistic and engaging manner. We aim to explore the history, impact, and artistry of jokes from various cultures and eras.<\/p>",
+            "page": ""
+          }
+        },
+        "dd1959a8-7b4e-4ad7-8335-227456acabf3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I contribute or submit a joke to the Museum?",
+            "icon": "none",
+            "row_content": "<p>We love receiving contributions from the public! If you have a joke that you believe would be a great addition to our collection, please visit the '<a href=\"\/pages\/submit-a-joke\" title=\"Submit a Joke!\">Submit a Joke<\/a>' page on our website. There, you'll find guidelines for submission and the process for review by our curatorial team.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15095008690254__da3cb779-19b7-40e5-be3b-91dfc38f0583-collapsible_row-1",
+        "dd1959a8-7b4e-4ad7-8335-227456acabf3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 88,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "da3cb779-19b7-40e5-be3b-91dfc38f0583"
+  ]
+}
